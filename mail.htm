@@ -14,16 +14,9 @@
       <div class='j-block block'>
         <div class='editimg j-editimg'>
             <p><span style='color:#c55500;'> IMG-URL: </span><input type="text" class='j-imgUrl'/></p>
-            <p><span style='margin-left:30px;float:right' class='j-cancle'>Cancle</span><span style='float:right' class='j-save'>Save</span></p>
+            <p><span style='margin-left:30px;float:right' class='j-cancel'>cancel</span><span style='float:right' class='j-save'>Save</span></p>
         </div>  
       </div>
-
-
-
-      <button class='j-read' style='position:fixed;right:100px;padding: 13px 35px 17px;background-color: #428bca;
-border: #357ebd 1px solid;color:#fff;border-radius:10px;cursor:pointer'>预览</button>
-      <button class='j-copy' style='position:fixed;top:55px;right:100px;padding: 13px 35px 17px;background-color: #428bca;
-border: #357ebd 1px solid;color:#fff;border-radius:10px;display:none;cursor:pointer'>复制</button>
 
       <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
           <tr>
@@ -52,11 +45,9 @@ border: #357ebd 1px solid;color:#fff;border-radius:10px;display:none;cursor:poin
                                   <tr>
                                       <td style="font-size: 16px;font-weight: bold;padding-bottom: 5px;"><span >主题分享</span></td>
                                   </tr>
-                                  <tr class='j-item'>
-                                      <td><span contenteditable='true'>一些工具</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="name" contenteditable='true' style='color: #679a45;'>littledu</span></td>
+                                  <tr class='j-item' dataid="j-item-0">
+                                      <td><span contenteditable="true" style="font-family:microsoft yahei" class="j-title">一些工具</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="j-name" contenteditable="true" style="color: #679a45;">yettazhou</span></td>
                                   </tr>
-                                  <tr><td><i class="add j-add"><a href="javascript:void(0)">Add</a></i>
-                                          <i class="remove j-remove" style='margin-left:15px;'><a href="javascript:void(0)">Remove</a></i></td></tr>
                               </table>
                           </td>
                       </tr>
@@ -66,24 +57,22 @@ border: #357ebd 1px solid;color:#fff;border-radius:10px;display:none;cursor:poin
                                   <tr>
                                       <td style="font-size: 16px;font-weight: bold;padding-bottom: 5px;">闪电分享</td>
                                   </tr>
-                                  <tr class='j-item'>
-                                      <td><span contenteditable='true'>一些工具</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="name" contenteditable='true' style='color: #679a45;'>littledu</span></td>
+                                  <tr class="j-item" dataid="j-item-1">
+                                      <td><span contenteditable="true" class="j-title">一些工具</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="j-name" contenteditable="true" style="color: #679a45;">yettazhou</span></td>
                                   </tr>
-                                  <tr><td><i class="add j-add"><a href="javascript:void(0)">Add</a></i>
-                                          <i class="remove j-remove" style='margin-left:15px;'><a href="javascript:void(0)">Remove</a></i></td></tr>
                               </table>
                           </td>
                       </tr>
                       <!--改分享内容-->
                       <tr>
                           <td>
-                              <table border="0" cellpadding="0" cellspacing="0" class="t-content j-share">
+                              <table border="0" cellpadding="0" cellspacing="0" class="t-content j-share-cont">
 
                                   <tbody>
                                       <tr>
                                           <td style="font-size: 16px;font-weight: bold;padding:40px 0 20px 80px;"><span >精彩内容</span></td>
                                       </tr>
-                                      <tr class='j-item'>
+                                      <tr class="j-item" dataid='j-item-0'>
                                           <td style="padding:0 0 50px 55px;">
                                               <table border="0" cellpadding="0" cellspacing="0" class="t-detail">
                                                   <tr>
@@ -100,7 +89,7 @@ border: #357ebd 1px solid;color:#fff;border-radius:10px;display:none;cursor:poin
                                                       <td valign="top">
                                                           <table border="0" cellpadding="0" cellspacing="0" width="500" >
                                                               <tr>
-                                                                  <td class="share-title" style='color: #679a45;font-size: 14px;'><span contenteditable='true'>标题标题标题标题标题标题标题标题</span></td>
+                                                                  <td class="share-title" style='color: #679a45;font-size: 14px;'><span contenteditable='true' class="j-title">标题标题标题标题标题标题标题标题</span></td>
                                                               </tr>
                                                               <tr>
                                                                   <td class="share-cont" style='font-size: 14px;width: 502px;margin-bottom: 5px;'><span contenteditable='true'>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</span></td>
@@ -115,8 +104,37 @@ border: #357ebd 1px solid;color:#fff;border-radius:10px;display:none;cursor:poin
                                               </table>
                                           </td>
                                       </tr>
-                                      <tr><td style="padding:0 0 50px 80px;"><i class="add  j-add"><a href="javascript:void(0)">Add</a></i>
-                                      <i class="remove j-remove" style='margin-left:15px;'><a href="javascript:void(0)">Remove</a></i></td>
+                                      <tr class="j-item" dataid='j-item-1'>
+                                          <td style="padding:0 0 50px 55px;">
+                                              <table border="0" cellpadding="0" cellspacing="0" class="t-detail">
+                                                  <tr>
+                                                      <td valign="top" style="text-align: center;width: 100px;">
+                                                          <table border="0" cellpadding="0" cellspacing="0" width="100" style="text-align: center" >
+                                                              <tr>
+                                                                  <td><img style="width: 50px;height: 50px;" src="http://qzonestyle.gtimg.cn/qz-act/public/img/mail-avatar/yettazhou.jpg" alt="" class='j-head'/></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td><span contenteditable='true' class='j-name'>yettazhou</span></td>
+                                                              </tr>
+                                                          </table>
+                                                      </td>
+                                                      <td valign="top">
+                                                          <table border="0" cellpadding="0" cellspacing="0" width="500" >
+                                                              <tr>
+                                                                  <td class="share-title" style='color: #679a45;font-size: 14px;'><span contenteditable='true' class="j-title">标题标题标题标题标题标题标题标题</span></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td class="share-cont" style='font-size: 14px;width: 502px;margin-bottom: 5px;'><span contenteditable='true'>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</span></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td width="500"><img width="500" class="cont-img j-img" src="http://b270.photo.store.qq.com/psb?/V10tNtSK2ZuylT/YjdAnEIoQLWNFURRbKjJkVkOciSyINrAQC*k2PXSGMs!/b/dIUE*qAmFgAA&bo=IAMVAkAGKgQBAHs!" alt=""/>
+                                                                  </td>
+                                                              </tr>
+                                                          </table>
+                                                      </td>
+                                                  </tr>
+                                              </table>
+                                          </td>
                                       </tr>
                                   </tbody>
                               </table>
